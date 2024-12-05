@@ -20,13 +20,13 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7565519782:AAF3-lzIly5wz2wVnGcO-83C5yDv90G
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5665677555').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/Rajnishpatidar79") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-4726413319'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-LOG_CHANNEL'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+tX0aicjuy1NmYzY1')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002444610618').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rajnish:Rajnish@rajnish.d2fpk.mongodb.net/?retryWrites=true&w=majority&appName=Rajnish")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajnishdd")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Rajnish")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -39,19 +39,19 @@ auth_channel = environ.get('AUTH_CHANNEL', '')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
 request_channel = environ.get('REQUEST_CHANNEL', '0')
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.merajnish/') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 #---------------------------------------------------------------
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "3097623f852197a9ce40d1212aaa8bbf2803e799")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'omegalinks.in')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "3097623f852197a9ce40d1212aaa8bbf2803e799")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'omegalinks.in')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "3097623f852197a9ce40d1212aaa8bbf2803e799")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'omegalinks.in')
+SHORTENER_API = environ.get("SHORTENER_API", "54fe56268ab8570d66ced4c72232388b2ff3059a")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'https://instantlinks.co/member/dashboard')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "54fe56268ab8570d66ced4c72232388b2ff3059a")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'https://instantlinks.co/member/tools/bot')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "54fe56268ab8570d66ced4c72232388b2ff3059a")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'https://instantlinks.co/member/tools/bot')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
